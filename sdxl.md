@@ -1,22 +1,8 @@
 # Stable Diffusion XL
 
 <!DOCTYPE html>
-<html lang="en">
-   <head>
-	 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script>
-    </head>
-	 
-<body>
- <pre><code class="language-mermaid">graph LR
-A--&gt;B
-</code></pre>
-
-<div class="mermaid">graph LR
-A--&gt;B
-</div>
 
 111
-
 <div class="mermaid">flowchart
 SDXL["Stable Diffusion XL v1.0 base"]
 AnimagineXL["Animagine XL"]
