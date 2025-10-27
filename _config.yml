@@ -7,6 +7,10 @@ baseurl: /wiki
 markdown: kramdown
 theme: null
 
+# Include in processing
+include:
+  - css
+
 # Exclude from processing
 exclude:
   - Gemfile
