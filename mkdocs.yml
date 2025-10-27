@@ -1,0 +1,137 @@
+site_name: 2ch /ai/ wiki
+site_url: https://2ch-ai.gitgud.site/wiki
+
+repo_url: https://gitgud.io/2ch-ai/wiki/
+edit_uri: -/edit/master/docs/
+
+theme:
+  name: material
+  language: ru
+  features:
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+    - navigation.tabs
+    - search.suggest
+    - search.highlight
+    - search.share
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+extra_css:
+  - assets/css/extended-markdown.css
+
+plugins:
+  - glightbox
+  - search
+  # - git-revision-date-localized:
+  #     enable_creation_date: true
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - md_in_html
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - toc:
+      permalink: true
+      permalink_title: Постоянная ссылка
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+
+nav:
+  - /nai/:
+    - Главная: ./nai/index.md
+    - Установка:
+      - NVidia: https://rentry.co/2ch_nai_guide
+      - AMD: ./nai/install/amd.md
+      - Облака: ./nai/install/clouds.md
+    - Интерфейсы: ./nai/interfaces.md
+    - Модели:
+      - 'Главная': ./nai/models/index.md
+      - 'Qwen-image': ./nai/models/qwen-image.md
+      - 'Flux': ./nai/models/flux.md
+      - 'Stable Diffusion XL': ./nai/models/stable-diffusion-xl.md
+      - 'Stable Diffusion 1': ./nai/models/stable-diffusion-1.md
+      - 'Прочие модели': ./nai/models/other.md
+    - Промпты: ./nai/prompts.md
+    - Апскейл: ./nai/upscale.md
+    - LoRA:
+      - Главная: ./nai/lora/index.md
+      - 2chAI easy LORA guide: https://rentry.co/waavd
+      - 2chAI hard LORA guide: https://rentry.co/2chAI_hard_LoRA_guide
+      - Старый гайд по обучению: ./nai/lora/2chAI_LoRA_Dreambooth_guide_old.md
+    - ControlNet:
+      - Главная: ./nai/controlnet/index.md
+      - 'ControlNet: A Complete Guide': ./nai/controlnet/controlnet-complete-guide.md
+    - VAE: ./nai/vae.md
+    - Шапка NAI-треда: https://rentry.co/nwhci
+
+  - /tech/:
+    - Шапка технотреда: ./tech/tech-shapka.md
+    - Lycoris: ./tech/lycoris.md
+    - Оптимайзеры: ./tech/optimizers.md
+    - Обучение SDXL: ./tech/sdxl.md
+    - Обучение YOLO: ./tech/yolo.md
+    - Legacy ссылки: ./tech/legacy.md
+    - Архивы тредов: ./tech/old_threads.md
+
+  - /speech/:
+    - Общее: ./speech/index.md
+    - Text To Speech:
+      - Silero: ./speech/tts/silero.md
+      - XTTS: ./speech/tts/xtts.md
+      - Edge: ./speech/tts/edge.md
+      - VITS-Umamusume-voice-synthesizer: ./speech/tts/vits-umamusume-voice-synthesize.md
+      - MoeGoe и MoeTTS: ./speech/tts/moe.md
+    - Speech To Speech:
+      - RVC:
+        - Общее: ./speech/sts/rvc/rvc.md
+        - Использование RVC: ./speech/sts/rvc/rvc-usage.md
+      - SVC:
+        - Общее: ./speech/sts/svc/svc.md
+        - Использование SVC: ./speech/sts/svc/svc-usage.md
+    - Шапка голосового треда: ./speech/speech-shapka.md
+
+  - /llama/:
+    - Общее: ./llama/index.md
+    - Гайды:
+      - KoboldCpp:
+        - Быстрый запуск: ./llama/guides/kobold-cpp.md
+        - Консольные команды: ./llama/guides/kobold-cpp/kobold-cpp-consolecommands.md
+      - Text Generation Webui: ./llama/guides/text-generation-webui.md
+      - TavernAI: ./llama/guides/tavern-ai.md
+      - Железо: ./llama/guides/hardware.md
+    - Шапка LLaMA-треда: ./llama/llama-shapka.md
