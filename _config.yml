@@ -25,8 +25,8 @@ navigation:
   - title: Главная
     url: /
   - title: Начало работы
-    url: /getting-started
+    url: /getting-started.html
   - title: Руководства
-    url: /guides
+    url: /guides.html
   - title: FAQ
-    url: /faq
+    url: /faq.html
