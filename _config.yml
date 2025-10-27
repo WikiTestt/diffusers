@@ -2,8 +2,8 @@
 
 title: Моя Вики
 description: База знаний и документация
-baseurl: ""
-url: ""
+baseurl: "/2ch-jekyll-test"
+url: "https://wikitestt.github.io"
 
 # Настройки сборки
 markdown: kramdown
