@@ -15,8 +15,9 @@ A--&gt;B
 A--&gt;B
 </div>
 
-<div class="mermaid">flowchart TD
+111
 
+<div class="mermaid">flowchart
 SDXL["Stable Diffusion XL v1.0 base"]
 AnimagineXL["Animagine XL"]
 PonyV6["Pony Diffusion v6 XL"]
@@ -24,11 +25,11 @@ IllustriousV0.1["Illustrious-XL v0.1"]
 NoobAI["NoobAI-XL"]
 RouWei
 
-SDXL --> AnimagineXL
-SDXL --> PonyV6
-SDXL --> IllustriousV0.1
-IllustriousV0.1 --> NoobAI
-IllustriousV0.1 --> RouWei
+SDXL --&gt; AnimagineXL
+SDXL --&gt; PonyV6
+SDXL --&gt; IllustriousV0.1
+IllustriousV0.1 --&gt; NoobAI
+IllustriousV0.1 --&gt; RouWei
 
 click SDXL "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0"
 click AnimagineXL "https://civitai.com/models/1188071/animagine-xl-40"
