@@ -2,7 +2,7 @@
 
 title: Моя Вики
 description: База знаний и документация
-baseurl: "/2ch-jekyll-test"
+baseurl: "/diffusers"
 url: "https://wikitestt.github.io"
 
 # Настройки сборки
