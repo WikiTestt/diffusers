@@ -15,8 +15,7 @@ A--&gt;B
 A--&gt;B
 </div>
 
-<div class="mermaid">graph LR
-flowchart TD
+<div class="mermaid">flowchart TD
 
 %% Nodes
 SDXL["Stable Diffusion XL v1.0 base"]
