@@ -5,9 +5,6 @@
     mermaid.initialize({ startOnLoad: true });
 </script>
 
-<!DOCTYPE html>
-
-111
 <div class="mermaid">flowchart
 SDXL["Stable Diffusion XL v1.0 base"]
 AnimagineXL["Animagine XL"]
@@ -32,22 +29,6 @@ click RouWei "https://civitai.com/models/950531/RouWei"
 classDef link fill:#FFF9C4,stroke:#FBC02D,stroke-width:2px,color:#4051b5;
 class SDXL,CounterfeitXL,HassakuXL,AnimagineXL,PonyV6,IllustriousV0.1,IllustriousV1.0,IllustriousV2.0,NoobAI,RouWei link;
 </div>
-	
-</body>
-<script>
-var config = {
-    startOnLoad:true,
-    theme: 'forest',
-    flowchart:{
-            useMaxWidth:false,
-            htmlLabels:true
-        }
-};
-mermaid.initialize(config);
-window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
-</script>
-
-</html>
 
 В этой статье рассматриваются файнтьюны на основе Stable Diffusion XL, подходящие для генерации аниме.
 
