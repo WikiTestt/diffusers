@@ -14,6 +14,37 @@ A--&gt;B
 <div class="mermaid">graph LR
 A--&gt;B
 </div>
+
+<div class="mermaid">graph LR
+flowchart TD
+
+%% Nodes
+SDXL["Stable Diffusion XL v1.0 base"]
+AnimagineXL["Animagine XL"]
+PonyV6["Pony Diffusion v6 XL"]
+IllustriousV0.1["Illustrious-XL v0.1"]
+NoobAI["NoobAI-XL"]
+RouWei
+
+%% Relationships between models
+SDXL --> AnimagineXL
+SDXL --> PonyV6
+SDXL --> IllustriousV0.1
+IllustriousV0.1 --> NoobAI
+IllustriousV0.1 --> RouWei
+
+%% Clickable links
+click SDXL "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0"
+click AnimagineXL "https://civitai.com/models/1188071/animagine-xl-40"
+click NoobAI "https://civitai.com/models/833294/noobai-xl-nai-xl"
+click PonyV6 "https://civitai.com/models/257749/pony-diffusion-v6-xl"
+click IllustriousV0.1 "https://civitai.com/models/795765/illustrious-xl"
+click RouWei "https://civitai.com/models/950531/RouWei"
+
+%% Styling
+classDef link fill:#FFF9C4,stroke:#FBC02D,stroke-width:2px,color:#4051b5;
+class SDXL,CounterfeitXL,HassakuXL,AnimagineXL,PonyV6,IllustriousV0.1,IllustriousV1.0,IllustriousV2.0,NoobAI,RouWei link;
+</div>
 	
 </body>
 <script>
