@@ -5,7 +5,7 @@ baseurl: /wiki
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: null
 
 # Exclude from processing
 exclude:

@@ -1,0 +1,8 @@
+---
+layout: default
+title: 2ch /ai/ wiki
+---
+
+# 2ch /ai/ wiki
+
+Основной репозиторий и инструкция по запуску вики локально может быть найдена [здесь](https://gitgud.io/2ch-ai/wiki/)
