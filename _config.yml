@@ -8,7 +8,7 @@ url: "https://wikitestt.github.io"
 # Настройки сборки
 markdown: kramdown
 highlighter: rouge
-permalink: /:title/
+permalink: /:basename.html
 
 # Плагины (стандартные, без установки)
 plugins:
