@@ -1,84 +1,32 @@
-title: 2ch /ai/ wiki
-description: 2ch /ai/ wiki
-url: https://2ch-ai.gitgud.site/wiki
-baseurl: /wiki
+# Конфигурация Jekyll для Wiki
 
-# Build settings
+title: Моя Вики
+description: База знаний и документация
+baseurl: ""
+url: ""
+
+# Настройки сборки
 markdown: kramdown
-theme: null
+highlighter: rouge
+permalink: /:title/
 
-# Include in processing
-include:
-  - css
+# Плагины (стандартные, без установки)
+plugins:
+  - jekyll-seo-tag
 
-# Exclude from processing
+# Exclude files
 exclude:
   - Gemfile
   - Gemfile.lock
-  - node_modules
-  - vendor
-  - .sass-cache
-  - .jekyll-cache
-  - .claude
+  - README.md
 
-# Collections
-collections:
-  nai:
-    output: true
-    permalink: /nai/:path/
-  tech:
-    output: true
-    permalink: /tech/:path/
-  speech:
-    output: true
-    permalink: /speech/:path/
-  llama:
-    output: true
-    permalink: /llama/:path/
-
-# Defaults
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: default
-  - scope:
-      path: "_nai"
-      type: "nai"
-    values:
-      layout: page
-  - scope:
-      path: "_tech"
-      type: "tech"
-    values:
-      layout: page
-  - scope:
-      path: "_speech"
-      type: "speech"
-    values:
-      layout: page
-  - scope:
-      path: "_llama"
-      type: "llama"
-    values:
-      layout: page
-
-# kramdown settings
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    block:
-      line_numbers: false
-
-# Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
-# Repository
-repository: 2ch-ai/wiki
-
-# Language
-lang: ru
+# Настройки навигации
+navigation:
+  - title: Главная
+    url: /
+  - title: Начало работы
+    url: /getting-started
+  - title: Руководства
+    url: /guides
+  - title: FAQ
+    url: /faq

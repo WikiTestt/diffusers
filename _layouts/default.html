@@ -1,25 +1,40 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'ru' }}">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/css/navigation.css' | relative_url }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-  {% include navigation.html %}
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">
+                <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+            </h1>
+            <nav class="main-nav">
+                {% for item in site.navigation %}
+                <a href="{{ item.url | relative_url }}" {% if page.url == item.url %}class="active"{% endif %}>
+                    {{ item.title }}
+                </a>
+                {% endfor %}
+            </nav>
+        </div>
+    </header>
 
-  <main class="content">
-    <div class="container">
-      {{ content }}
-    </div>
-  </main>
+    <main class="site-content">
+        <div class="container">
+            <article class="page-content">
+                <h1 class="page-title">{{ page.title }}</h1>
+                {{ content }}
+            </article>
+        </div>
+    </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2ch /ai/ wiki</p>
-    </div>
-  </footer>
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 {{ site.title }}. {{ site.description }}</p>
+        </div>
+    </footer>
 </body>
 </html>
