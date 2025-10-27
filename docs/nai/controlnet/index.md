@@ -25,7 +25,7 @@ ControlNet использует уже обученные слои больши�
 * [Union SDXL 1.0](https://huggingface.co/xinsir/controlnet-union-sdxl-1.0)
 * [kataragi](https://huggingface.co/kataragi)
 
-С [PonyDiffusion v6 XL](../models/pony-diffusion-v6-xl.md) совместимы следующие модели:
+С PonyDiffusion v6 XL совместимы следующие модели:
 
 * Anytest, отмеченные символами `p` (cnlllite-anytest_**P**...) и `pn` (CN-anytest_v3-..._**pn**_...).
 * Union SDXL 1.0
@@ -35,3 +35,4 @@ ControlNet использует уже обученные слои больши�
 #### Stable Diffusion 1
 * [ControlNet 1.1](https://civitai.com/models/38784)
 * [QR Code Monster](https://huggingface.co/monster-labs/control_v1p_sd15_qrcode_monster)
+
